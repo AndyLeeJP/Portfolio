@@ -2,8 +2,9 @@ import React from "react";
 // import image1 from "../../Images/bg1.jpg";
 import reactImage from "../Images/react.png";
 import jsImage from "../Images/js.png";
-import firebaseImage from "../Images/firebase.jpg";
+import firebaseImage from "../Images/java.png";
 import profileImage from "../Images/sibainu.jpg";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -13,8 +14,11 @@ const HomePage = () => {
       <img src={profileImage} className="profileImage" />
 
       <p>
-        ShinCodeです。普段は個人でWeb系の情報発信をYoutubeやTwitterにて行っています。主にHTML/CSS/Javascript/Reactメインに取り扱っています。趣味は個人でプログラミングの撮影を行うことです。
-        ShinCodeです。普段は個人でWeb系の情報発信をYoutubeやTwitterにて行っています。主にHTML/CSS/Javascript/Reactメインに取り扱っています。趣味は個人でプログラミングの撮影を行うことです。
+        Born in Korea and raised in Japan, Andy Lee has been exposed to many
+        cultures, held interest in technology and software in his early age, he
+        studied algorithms and codingin Centennial college in Canada, and
+        successfully worked as a professional software engineer in the IT
+        company in Tokyo, Japan
       </p>
 
       <section class="page-section" id="services">
@@ -31,11 +35,15 @@ const HomePage = () => {
                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
                 <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
               </span>
-              <h4 class="my-3">ECサイト</h4>
+              <a href="https://google-map-app.vercel.app/">
+                <h4 class="my-3">Tokyo Wi-Fi location on Google Maps</h4>
+              </a>
               <p class="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-                maxime quam architecto quo inventore harum ex magni, dicta
-                impedit.
+                This website uses Google map API and Tokyo Metropolitan
+                Government's open data to mark Wi-Fi coordinates on Google map.
+                Clicking on a marker will take you to the corresponding address
+                and pressing a button outside the map will take you back to your
+                current location.
               </p>
             </div>
             <div class="col-md-4">
@@ -43,11 +51,12 @@ const HomePage = () => {
                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
                 <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
               </span>
-              <h4 class="my-3">レスポンシブサイト</h4>
+              <a href="https://pokemon-azure-five.vercel.app/">
+                <h4 class="my-3">a pokemon dictionary</h4>
+              </a>
               <p class="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-                maxime quam architecto quo inventore harum ex magni, dicta
-                impedit.
+                Pokémon are arranged in numbered order in this illustrated book.
+                When you press a Pokémon, its status appears on the right.
               </p>
             </div>
             <div class="col-md-4">
