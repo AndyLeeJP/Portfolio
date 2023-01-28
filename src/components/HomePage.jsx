@@ -2,8 +2,8 @@ import React from "react";
 // import image1 from "../../Images/bg1.jpg";
 import reactImage from "../Images/react.png";
 import jsImage from "../Images/js.png";
-import firebaseImage from "../Images/java.png";
-import profileImage from "../Images/sibainu.jpg";
+import javaImage from "../Images/java.png";
+import profileImage from "../Images/andy.png";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
@@ -74,6 +74,9 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      <button type="button" class="btn btn-primary">
+        <Link to="/blog">See more</Link>
+      </button>
 
       <section id="skill">
         <div class="text-center">
@@ -90,8 +93,8 @@ const HomePage = () => {
               <p>HTML/CSSがつかえます</p>
             </div>
             <div class="col-md-4 services">
-              <img src={firebaseImage} />
-              <h4>Firebase</h4>
+              <img src={javaImage} />
+              <h4>Java</h4>
               <p>Firebaseがつかえます</p>
             </div>
           </div>
